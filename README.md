@@ -3,10 +3,11 @@
 ## Prerequisites 
 - [Xcode or Xcode beta](https://developer.apple.com/download/) or from AppStore.
 - `git clone git@github.com:Torsph/BySykkel.git`
-- `cd BySykkel/BySykkel.playground`
+- `cd BySykkel`
+- `open BySykkel.playground`
 
 ## How to run
-After opening the playground it should be as easy as clicking the little play button.
+After opening the playground it should be as easy as clicking the little play button, but it usually just play it self automagically.
 You may need to open the assistent editor (cmd + option + enter) to show the live view.
 
 ## Structure
