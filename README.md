@@ -2,8 +2,8 @@
 
 ## Prerequisites 
 - [Xcode or Xcode beta](https://developer.apple.com/download/) or from AppStore.
-- `git clone <some git url>`
-- `cd repo/BySykkel.playground`
+- `git clone git@github.com:Torsph/BySykkel.git`
+- `cd BySykkel/BySykkel.playground`
 
 ## How to run
 After opening the playground it should be as easy as clicking the little play button.
