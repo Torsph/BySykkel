@@ -164,8 +164,8 @@
 				43846F66214E82820099008F /* BySykkelViewModelTests.swift */,
 				43846F64214E7EEB0099008F /* BySykkelErrorTests.swift */,
 				43846F6A214E870E0099008F /* MapLocationTests.swift */,
-				43EE0EB5214B74A200696696 /* Info.plist */,
 				43846F5D214E78280099008F /* Util.swift */,
+				43EE0EB5214B74A200696696 /* Info.plist */,
 			);
 			path = BySykkelTests;
 			sourceTree = "<group>";
