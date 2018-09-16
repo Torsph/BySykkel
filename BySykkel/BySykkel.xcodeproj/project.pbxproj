@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		43846F5C214E754A0099008F /* SessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43846F5B214E754A0099008F /* SessionMock.swift */; };
+		43846F5E214E78280099008F /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43846F5D214E78280099008F /* Util.swift */; };
+		43846F61214E7BC00099008F /* Stations.json in Resources */ = {isa = PBXBuildFile; fileRef = 43846F60214E7BC00099008F /* Stations.json */; };
+		43846F63214E7E410099008F /* Availability.json in Resources */ = {isa = PBXBuildFile; fileRef = 43846F62214E7E410099008F /* Availability.json */; };
+		43846F65214E7EEB0099008F /* BySykkelErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43846F64214E7EEB0099008F /* BySykkelErrorTests.swift */; };
+		43846F67214E82820099008F /* BySykkelViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43846F66214E82820099008F /* BySykkelViewModelTests.swift */; };
+		43846F69214E86CE0099008F /* MapLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43846F68214E86CE0099008F /* MapLocation.swift */; };
+		43846F6B214E870E0099008F /* MapLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43846F6A214E870E0099008F /* MapLocationTests.swift */; };
 		43EE0E9F214B74A000696696 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EE0E9E214B74A000696696 /* AppDelegate.swift */; };
 		43EE0EA6214B74A200696696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43EE0EA5214B74A200696696 /* Assets.xcassets */; };
 		43EE0EA9214B74A200696696 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43EE0EA7214B74A200696696 /* LaunchScreen.storyboard */; };
@@ -40,6 +47,13 @@
 
 /* Begin PBXFileReference section */
 		43846F5B214E754A0099008F /* SessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionMock.swift; sourceTree = "<group>"; };
+		43846F5D214E78280099008F /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		43846F60214E7BC00099008F /* Stations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Stations.json; sourceTree = "<group>"; };
+		43846F62214E7E410099008F /* Availability.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Availability.json; sourceTree = "<group>"; };
+		43846F64214E7EEB0099008F /* BySykkelErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BySykkelErrorTests.swift; sourceTree = "<group>"; };
+		43846F66214E82820099008F /* BySykkelViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BySykkelViewModelTests.swift; sourceTree = "<group>"; };
+		43846F68214E86CE0099008F /* MapLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocation.swift; sourceTree = "<group>"; };
+		43846F6A214E870E0099008F /* MapLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationTests.swift; sourceTree = "<group>"; };
 		43EE0E9B214B74A000696696 /* BySykkel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BySykkel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43EE0E9E214B74A000696696 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43EE0EA5214B74A200696696 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +106,15 @@
 			path = Mock;
 			sourceTree = "<group>";
 		};
+		43846F5F214E7B750099008F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				43846F60214E7BC00099008F /* Stations.json */,
+				43846F62214E7E410099008F /* Availability.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		43EE0E92214B74A000696696 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +143,7 @@
 				43EE0ED1214B750A00696696 /* BySykkelViewController.swift */,
 				43EE0ED9214B768800696696 /* BySykkelMapViewController.swift */,
 				43EE0ED2214B750A00696696 /* BySykkelViewModel.swift */,
+				43846F68214E86CE0099008F /* MapLocation.swift */,
 				43EE0ED0214B750A00696696 /* Model.swift */,
 				43EE0ED3214B750B00696696 /* Util.swift */,
 				43EE0EA5214B74A200696696 /* Assets.xcassets */,
@@ -132,9 +156,14 @@
 		43EE0EB2214B74A200696696 /* BySykkelTests */ = {
 			isa = PBXGroup;
 			children = (
+				43846F5F214E7B750099008F /* Resources */,
 				43846F5A214E75390099008F /* Mock */,
 				43EE0EB3214B74A200696696 /* BySykkelAPITests.swift */,
+				43846F66214E82820099008F /* BySykkelViewModelTests.swift */,
+				43846F64214E7EEB0099008F /* BySykkelErrorTests.swift */,
+				43846F6A214E870E0099008F /* MapLocationTests.swift */,
 				43EE0EB5214B74A200696696 /* Info.plist */,
+				43846F5D214E78280099008F /* Util.swift */,
 			);
 			path = BySykkelTests;
 			sourceTree = "<group>";
@@ -261,6 +290,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43846F63214E7E410099008F /* Availability.json in Resources */,
+				43846F61214E7BC00099008F /* Stations.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +312,7 @@
 				43EE0EDA214B768800696696 /* BySykkelMapViewController.swift in Sources */,
 				43EE0E9F214B74A000696696 /* AppDelegate.swift in Sources */,
 				43EE0ED6214B750B00696696 /* BySykkelViewController.swift in Sources */,
+				43846F69214E86CE0099008F /* MapLocation.swift in Sources */,
 				43EE0ED4214B750B00696696 /* BySykkelAPI.swift in Sources */,
 				43EE0ED8214B750B00696696 /* Util.swift in Sources */,
 				43EE0ED7214B750B00696696 /* BySykkelViewModel.swift in Sources */,
@@ -293,7 +325,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				43846F5C214E754A0099008F /* SessionMock.swift in Sources */,
+				43846F67214E82820099008F /* BySykkelViewModelTests.swift in Sources */,
+				43846F5E214E78280099008F /* Util.swift in Sources */,
+				43846F65214E7EEB0099008F /* BySykkelErrorTests.swift in Sources */,
 				43EE0EB4214B74A200696696 /* BySykkelAPITests.swift in Sources */,
+				43846F6B214E870E0099008F /* MapLocationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
