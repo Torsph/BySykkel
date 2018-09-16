@@ -9,28 +9,35 @@
 import XCTest
 
 class BySykkelUITests: XCTestCase {
-        
+    let app = XCUIApplication()
+
     override func setUp() {
         super.setUp()
-        
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        XCUIApplication().launch()
 
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        continueAfterFailure = false
+        app.launch()
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testThatItsPossibleToChangeToMap() {
+        let tableView = app.tables.firstMatch
+        waitFor(element: tableView)
+
+        let cell = tableView.cells.staticTexts["157 - Nylandsveien"]
+        waitFor(element: cell)
+
+        XCTAssertEqual(tableView.cells.count, 237)
+
+        let tabBarItem = app.tabBars.firstMatch.buttons["Map"]
+        tabBarItem.tap()
+
+        let map = app.maps.firstMatch
+        waitFor(element: map)
+
+        map.pinch(withScale: 10, velocity: 1)
+
+        let marker = map.otherElements["163 - Vaterlandsparken"]
+        waitFor(element: marker)
+        marker.tap()
     }
     
 }
