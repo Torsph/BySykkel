@@ -21,6 +21,7 @@ public class BySykkelViewController: UIViewController {
 
     func setup() {
         title = "List"
+        tabBarItem.image = UIImage(named: "list")
         view.addSubview(tableView)
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),

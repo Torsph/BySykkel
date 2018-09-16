@@ -39,6 +39,7 @@ class BySykkelMapViewController: UIViewController {
 
     func setup() {
         title = "Map"
+        tabBarItem.image = UIImage(named: "map_marker")
         view.addSubview(mapView)
         NSLayoutConstraint.activate([
             mapView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
