@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let token = "***REMOVED***"
+        let token = ""
 
         let api = BySykkelAPI(token: token)
         let vm = BySykkelViewModel(api: api)
