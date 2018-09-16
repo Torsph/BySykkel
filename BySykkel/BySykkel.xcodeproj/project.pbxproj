@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43846F5C214E754A0099008F /* SessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43846F5B214E754A0099008F /* SessionMock.swift */; };
 		43EE0E9F214B74A000696696 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EE0E9E214B74A000696696 /* AppDelegate.swift */; };
 		43EE0EA6214B74A200696696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43EE0EA5214B74A200696696 /* Assets.xcassets */; };
 		43EE0EA9214B74A200696696 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43EE0EA7214B74A200696696 /* LaunchScreen.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43846F5B214E754A0099008F /* SessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionMock.swift; sourceTree = "<group>"; };
 		43EE0E9B214B74A000696696 /* BySykkel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BySykkel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43EE0E9E214B74A000696696 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43EE0EA5214B74A200696696 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43846F5A214E75390099008F /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				43846F5B214E754A0099008F /* SessionMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		43EE0E92214B74A000696696 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +132,7 @@
 		43EE0EB2214B74A200696696 /* BySykkelTests */ = {
 			isa = PBXGroup;
 			children = (
+				43846F5A214E75390099008F /* Mock */,
 				43EE0EB3214B74A200696696 /* BySykkelAPITests.swift */,
 				43EE0EB5214B74A200696696 /* Info.plist */,
 			);
@@ -281,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43846F5C214E754A0099008F /* SessionMock.swift in Sources */,
 				43EE0EB4214B74A200696696 /* BySykkelAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

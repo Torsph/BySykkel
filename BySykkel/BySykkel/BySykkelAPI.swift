@@ -4,11 +4,15 @@ public class BySykkelAPI {
     let session: URLSession
     let baseURL = URL(string: "https://oslobysykkel.no/api/v1/")
 
-    public init(token: String) {
-        let config = URLSessionConfiguration.default
-        config.httpAdditionalHeaders = ["Client-Identifier": token]
-        config.timeoutIntervalForRequest = 5
-        session = URLSession(configuration: config)
+    public init(token: String, session: URLSession? = nil) {
+        if let session = session {
+            self.session = session
+        } else {
+            let config = URLSessionConfiguration.default
+            config.httpAdditionalHeaders = ["Client-Identifier": token]
+            config.timeoutIntervalForRequest = 5
+            self.session = URLSession(configuration: config)
+        }
     }
 
     public func getStations(callback: @escaping (Result<[Int: Station]>) -> Void) {
